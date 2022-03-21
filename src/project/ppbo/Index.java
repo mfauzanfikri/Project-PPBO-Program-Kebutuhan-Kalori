@@ -5,10 +5,6 @@
 
 package project.ppbo;
 
-/**
- *
- * @author Fauzan
- */
 public class Index {
     // Linear-search function to find the index of an element
     public static int findIndex(int arr[], int t)

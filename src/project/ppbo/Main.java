@@ -41,7 +41,6 @@ public class Main {
             }
         }
         
-        
         kkal = new KebutuhanKalori(tinggi, berat, usia, gender);
         
         System.out.println("\nKebutuhan kalori per hari: " + kkal.hitungKalori() + " kkal");
