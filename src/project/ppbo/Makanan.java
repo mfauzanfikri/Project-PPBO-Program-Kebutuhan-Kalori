@@ -25,59 +25,48 @@ abstract class Makanan {
 class Pagi extends Makanan {
     //constructor
     Pagi() {
-        Pagi.mk = new String[]{};
-        Pagi.kalMk = new float[]{};
+        Pagi.mk = new String[]{"Roti", "Bubur", "Sereal", "Mie"};
+        Pagi.kalMk = new float[]{264.4f , 49.7f , 379.1f , 138.1f};
         
-        Pagi.lauk = new String[]{};
-        Pagi.kalL = new float[]{};
+        Pagi.buah = new String[]{"Alpukat", "Pisang", "Apel", "Melon"};
+        Pagi.kalB = new float[]{160.1f , 88.7f , 52.1f , 33.7f};
         
-        Pagi.buah = new String[]{};
-        Pagi.kalB = new float[]{};
-        
-        Pagi.minuman = new String[]{};
-        Pagi.kalM = new float[]{};
-        
-        Pagi.sayur = new String[]{};
-        Pagi.kalS = new float[]{};
+        Pagi.minuman = new String[]{"Susu", "Kopi", "Teh", "Yogurt"};
+        Pagi.kalM = new float[]{42.3f , 0.5f , 35.1f , 55.8f};
+
     }
 }
 
 class Siang extends Makanan {
     //constructor
     Siang() {
-        Siang.mk = new String[]{};
-        Siang.kalMk = new float[]{};
+        Siang.mk = new String[]{"Nasi", "Mie",  "Kentang"};
+        Siang.kalMk = new float[]{130f , 138.1f , 76.7f};
         
-        Siang.lauk = new String[]{};
-        Siang.kalL = new float[]{};
+        Siang.lauk = new String[]{"Ayam", "Daging",  "Tempe", "Tahu", "Ikan", "Telur"};
+        Siang.kalL = new float[]{239f , 250.5f , 192.9f, 76f, 205.8f, 155.1f};
         
-        Siang.buah = new String[]{};
-        Siang.kalB = new float[]{};
+        Siang.buah = new String[]{"Semangka", "Mangga",  "Jeruk", "Melon"};
+        Siang.kalB = new float[]{30.4f , 59.8f , 47.1f, 33.7f};
         
-        Siang.minuman = new String[]{};
-        Siang.kalM = new float[]{};
+        Siang.minuman = new String[]{"Es Jeruk", "Jeruk Hangat",  "Es Teh", "Air Kelapa"};
+        Siang.kalM = new float[]{112f , 47f , 35.1f, 18.9f};
         
-        Siang.sayur = new String[]{};
-        Siang.kalS = new float[]{};
+        Siang.sayur = new String[]{"Bayam", "Kangkung",  "Sawi", "Pakcoy"};
+        Siang.kalS = new float[]{23f , 18.9f , 66.4f, 13.1f};
     }
 }
 
 class Malam extends Makanan {
     //constructor
     Malam() {
-        Malam.mk = new String[]{};
-        Malam.kalMk = new float[]{};
+        Malam.mk = new String[]{"Nasi", "Mie",  "Roti"};
+        Malam.kalMk = new float[]{130f , 138.1f , 264.4f};
         
-        Malam.lauk = new String[]{};
-        Malam.kalL = new float[]{};
+        Malam.lauk = new String[]{"Ayam", "Ikan",  "Telur"};
+        Malam.kalL = new float[]{239f , 205.8f , 155.1f};
         
-        Malam.buah = new String[]{};
-        Malam.kalB = new float[]{};
-        
-        Malam.minuman = new String[]{};
-        Malam.kalM = new float[]{};
-        
-        Malam.sayur = new String[]{};
-        Malam.kalS = new float[]{};
+        Malam.minuman = new String[]{"Teh", "Kopi",  "Susu"};
+        Malam.kalM = new float[]{35.1f , 0.5f , 42.3f};
     }
 }
