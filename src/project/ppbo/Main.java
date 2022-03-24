@@ -8,41 +8,49 @@ import java.util.*;
 
 public class Main {
     private static Scanner scan;
-    private static KebutuhanKalori kkal;
+    private static User user;
     
     public static void main(String[] args) {
-        int tinggi, berat, usia;
-        String gender;
-        boolean valid = false;
-        
+        user = new User();
         scan = new Scanner(System.in);
+        String konfirmasi = "";
         
         System.out.println("== Program Kalori ==\n");
         
-        System.out.println("Tinggi (cm): ");
-        tinggi = scan.nextInt();
+        Menu.printMenu();
+        System.out.println("Masukkan pilihan menu (1-2): ");
+        Menu.setPilihan(scan.nextInt());
         
-        System.out.println("Berat (kg): ");
-        berat = scan.nextInt();
-        
-        System.out.println("Usia (tahun): ");
-        usia = scan.nextInt();
-        
-        System.out.println("Gender (L/P): ");
-        gender = scan.next();
+        while(Menu.getPilihan() >=1 && Menu.getPilihan() <= 2) {
+            if ("Y".equals(konfirmasi) || "y".equals(konfirmasi)) {
+                Menu.printMenu();
+                System.out.println("Masukkan pilihan menu (1-2): ");
+                Menu.setPilihan(scan.nextInt());
+            }
             
-        while(!valid) {
-            if("L".equals(gender) || "P".equals(gender)) {
-                valid = true;
-            } else {
-                System.out.println("\nGender invalid, coba lagi.\n");
-                System.out.println("Gender (L/P): ");
-                gender = scan.nextLine();
+            switch (Menu.getPilihan()) {
+                case 1 -> {
+                    Menu.prosesMenu1();
+                    System.out.println("Kembali ke menu? (Y/N):");
+                    konfirmasi = scan.next();
+                    if ("Y".equals(konfirmasi) || "y".equals(konfirmasi)) {
+                        continue;
+                    } else {
+                        return;
+                    }
+                }
+                    
+                case 2 -> {
+                    Menu.prosesMenu2(user);
+                    System.out.println("Kembali ke menu? (Y/N):");
+                    konfirmasi = scan.next();
+                    if ("Y".equals(konfirmasi) || "y".equals(konfirmasi)) {
+                        continue;
+                    } else {
+                        return;
+                    }
+                }
             }
         }
-        
-        kkal = new KebutuhanKalori(tinggi, berat, usia, gender);
-        
-        System.out.println("\nKebutuhan kalori per hari: " + kkal.hitungKalori() + " kkal");
     }
 }

@@ -5,15 +5,19 @@
 
 package project.ppbo;
 
-public class KebutuhanKalori {
+public class User {
     private int tinggi, berat, usia;
     private String gender;
     
-    public KebutuhanKalori(int tinggi, int berat, int usia, String gender) {
+    public User(int tinggi, int berat, int usia, String gender) {
         this.tinggi = tinggi;
         this.berat = berat;
         this.usia = usia;
         this.gender = gender;
+    }
+    
+    public User() {
+        
     }
    
     public void setTinggi(int tinggi) {
