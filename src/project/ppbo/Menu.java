@@ -69,7 +69,8 @@ public class Menu {
         }
         
         user.setGender(gender);
+        Kalori.hitungKalori(user);
        
-        System.out.println("\nKebutuhan kalori per hari: " + user.hitungKalori() + " kkal");
+        System.out.println("\nKebutuhan kalori per hari: " + user.getKalori() + " kkal");
     }
 }
