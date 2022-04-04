@@ -72,5 +72,10 @@ public class Menu {
         Kalori.hitungKalori(user);
        
         System.out.println("\nKebutuhan kalori per hari: " + user.getKalori() + " kkal");
+        
+        Kalori.bagiKalori(user);
+        Kalori.kalPagi(user);
+        Kalori.kalSiang(user);
+        Kalori.kalMalam(user);
     }
 }
