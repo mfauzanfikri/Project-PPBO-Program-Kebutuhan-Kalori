@@ -41,8 +41,16 @@ public class User {
         this.tinggi = tinggi;
     }
     
+    public void setTinggi(double tinggi) {
+        this.tinggi = (int)tinggi;
+    }
+    
     public void setBerat(int berat) {
         this.berat = berat;
+    }
+    
+    public void setBerat(double berat) {
+        this.berat = (int)berat;
     }
     
     public void setUsia(int usia) {
@@ -55,6 +63,10 @@ public class User {
     
     public void setKalori(float kalori) {
         this.kalori = kalori;
+    }
+    
+    public void setKalori(int kalori) {
+        this.kalori = (float)kalori;
     }
     
     public int getTinggi() {

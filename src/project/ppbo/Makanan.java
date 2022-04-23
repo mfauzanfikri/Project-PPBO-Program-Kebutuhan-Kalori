@@ -129,62 +129,54 @@ class Makanan {
     protected void setGramS(float[] gramS) {
         this.gramS = gramS;
     }
+    
+    public void printInfo() {
+        System.out.println("Class Makanan.");
+    }
 }
 
 class MakananPagi extends Makanan {
-    public static String[] mpS, buahS, minumanS;
-    public static float[] kalMpS, kalLS, kalBS, kalMS, kalSS;
+    public static String[] mpS = {"Roti", "Bubur", "Sereal", "Mie"};
+    public static String[] buahS = {"Alpukat", "Pisang", "Apel", "Melon"};
+    public static String[] minumanS = {"Susu", "Kopi", "Teh", "Yogurt"};
+    public static float[] kalMpS = {264.4f , 49.7f , 379.1f , 138.1f};
+    public static float[] kalBS = {160.1f , 88.7f , 52.1f , 33.7f};
+    public static float[] kalMS = {42.3f , 0.5f , 35.1f , 55.8f};
     
-    //constructor
-    MakananPagi() {
-        MakananPagi.mpS = new String[]{"Roti", "Bubur", "Sereal", "Mie"};
-        MakananPagi.kalMpS = new float[]{264.4f , 49.7f , 379.1f , 138.1f};
-        
-        MakananPagi.buahS = new String[]{"Alpukat", "Pisang", "Apel", "Melon"};
-        MakananPagi.kalBS = new float[]{160.1f , 88.7f , 52.1f , 33.7f};
-        
-        MakananPagi.minumanS = new String[]{"Susu", "Kopi", "Teh", "Yogurt"};
-        MakananPagi.kalMS = new float[]{42.3f , 0.5f , 35.1f , 55.8f};
-
+    @Override
+    public void printInfo() {
+        System.out.println("Class Makanan Pagi.");
     }
 }
 
 class MakananSiang extends Makanan {
-    public static String[] mpS, laukS, buahS, minumanS, sayurS;
-    public static float[] kalMpS, kalLS, kalBS, kalMS, kalSS;
+    public static String[] mpS = {"Nasi", "Mie",  "Kentang"};
+    public static String[] laukS = {"Ayam", "Daging",  "TempSe", "Tahu", "Ikan", "Telur"};
+    public static String[] buahS = {"Semangka", "Mangga",  "Jeruk", "Melon"};
+    public static String[] minumanS = {"Es Jeruk", "Jeruk Hangat",  "Es Teh", "Air Kelapa"};
+    public static String[] sayurS = {"Bayam", "Kangkung",  "Sawi", "Pakcoy"};
+    public static float[] kalMpS = {130f , 138.1f , 76.7f};
+    public static float[] kalLS = {239f , 250.5f , 192.9f, 76f, 205.8f, 155.1f};
+    public static float[] kalBS = {30.4f , 59.8f , 47.1f, 33.7f};
+    public static float[] kalMS = {112f , 47f , 35.1f, 18.9f};
+    public static float[] kalSS = {23f , 18.9f , 66.4f, 13.1f};
     
-    //constructor
-    MakananSiang() {
-        MakananSiang.mpS = new String[]{"Nasi", "Mie",  "Kentang"};
-        MakananSiang.kalMpS = new float[]{130f , 138.1f , 76.7f};
-        
-        MakananSiang.laukS = new String[]{"Ayam", "Daging",  "TempSe", "Tahu", "Ikan", "Telur"};
-        MakananSiang.kalLS = new float[]{239f , 250.5f , 192.9f, 76f, 205.8f, 155.1f};
-        
-        MakananSiang.buahS = new String[]{"Semangka", "Mangga",  "Jeruk", "Melon"};
-        MakananSiang.kalBS = new float[]{30.4f , 59.8f , 47.1f, 33.7f};
-        
-        MakananSiang.minumanS = new String[]{"Es Jeruk", "Jeruk Hangat",  "Es Teh", "Air Kelapa"};
-        MakananSiang.kalMS = new float[]{112f , 47f , 35.1f, 18.9f};
-        
-        MakananSiang.sayurS = new String[]{"Bayam", "Kangkung",  "Sawi", "Pakcoy"};
-        MakananSiang.kalSS = new float[]{23f , 18.9f , 66.4f, 13.1f};
+    @Override
+    public void printInfo() {
+        System.out.println("Class Makanan Siang.");
     }
 }
 
 class MakananMalam extends Makanan {
-    public static String[] mpS, laukS, minumanS;
-    public static float[] kalMpS, kalLS, kalBS, kalMS, kalSS;
+    public static String[] mpS = {"Nasi", "Mie",  "Roti"};
+    public static String[] laukS = {"Ayam", "Ikan",  "Telur"};
+    public static String[] minumanS = {"Teh", "Kopi",  "Susu"};
+    public static float[] kalMpS = {130f , 138.1f , 264.4f};
+    public static float[] kalLS = {239f , 205.8f , 155.1f};
+    public static float[] kalMS = {35.1f , 0.5f , 42.3f};
     
-    //constructor
-    MakananMalam() {
-        MakananMalam.mpS = new String[]{"Nasi", "Mie",  "Roti"};
-        MakananMalam.kalMpS = new float[]{130f , 138.1f , 264.4f};
-        
-        MakananMalam.laukS = new String[]{"Ayam", "Ikan",  "Telur"};
-        MakananMalam.kalLS = new float[]{239f , 205.8f , 155.1f};
-        
-        MakananMalam.minumanS = new String[]{"Teh", "Kopi",  "Susu"};
-        MakananMalam.kalMS = new float[]{35.1f , 0.5f , 42.3f};
+    @Override
+    public void printInfo() {
+        System.out.println("Class Makanan Malam.");
     }
 }

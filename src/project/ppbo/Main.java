@@ -18,20 +18,20 @@ public class Main {
         System.out.println("== Program Kalori ==\n");
         
         Menu.printMenu();
-        System.out.println("Masukkan pilihan menu (1-2): ");
+        System.out.print("Masukkan pilihan menu (1-2): ");
         Menu.setPilihan(scan.nextInt());
         
         while(Menu.getPilihan() >=1 && Menu.getPilihan() <= 2) {
             if ("Y".equals(konfirmasi) || "y".equals(konfirmasi)) {
                 Menu.printMenu();
-                System.out.println("Masukkan pilihan menu (1-2): ");
+                System.out.print("Masukkan pilihan menu (1-2): ");
                 Menu.setPilihan(scan.nextInt());
             }
             
             switch (Menu.getPilihan()) {
                 case 1 -> {
                     Menu.prosesMenu1();
-                    System.out.println("Kembali ke menu? (Y/N):");
+                    System.out.print("Kembali ke menu? (Y/N):");
                     konfirmasi = scan.next();
                     if ("Y".equals(konfirmasi) || "y".equals(konfirmasi)) {
                         continue;
@@ -42,7 +42,7 @@ public class Main {
                     
                 case 2 -> {
                     Menu.prosesMenu2(user);
-                    System.out.println("Kembali ke menu? (Y/N):");
+                    System.out.print("Kembali ke menu? (Y/N):");
                     konfirmasi = scan.next();
                     if ("Y".equals(konfirmasi) || "y".equals(konfirmasi)) {
                         continue;
